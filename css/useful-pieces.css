@@ -15,7 +15,6 @@
 /* By default, buttons inside button groups inside vertical button groups
  * don't resize to their column. Not sure why? */
 .btn-group-vertical .btn {
-  width: 100%;
   text-align: left;
 }
 
@@ -25,24 +24,11 @@
   border-color: #357ebd;
 }
 
-
-/* /1* getting the padding between row items to work right *1/ */
-/* .row *:not(:last-child) { */
-/*   padding-right: 0; */
-/* } */
-
 hr {
   margin-top: 0;
-}
-
-.btn-group-vertical {
-  padding-left: 0;
-  padding-bottom: 20px;
-  bottom: 0;
 }
 
 /* making the dropdown-toggles more noticable */
 .dropdown-toggle {
     cursor: pointer;
 }
-

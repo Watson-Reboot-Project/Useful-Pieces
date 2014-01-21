@@ -25,7 +25,7 @@ should be an `ng-bind` attribute to display this item's value to the user.
 
 The primary difference between the `list-group` version and the
 `vertical-button-group` version is how it's displayed to the user. both methods
-require 
+require some css to work correctly. the `list-group` version 
 
 Dropdown Selectors
 ------------------
