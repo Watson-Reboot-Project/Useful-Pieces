@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app='UsefulPiecesApp'>
+<head>
+  <title>Useful Pieces</title>
+  <meta charset="utf-8">
+  <link rel='stylesheet' href='lib/css/bootstrap-3.css'>
+  <link rel='stylesheet' href='css/useful-pieces.css'>
+</head>
+<body>
+<div class='container' ng-controller='UsefulPiecesController'>
+    <h1 class='text-center'>Useful Pieces</h1>
+    <h3>Vertical Radio Buttons</h3>
+    <div class='col-lg-3 list-group list-group-sm'>
+      <li class='btn btn-default list-group-item list-group-btn' ng-repeat='item in vertical_radio_buttons' ng-model='$parent.selected_button' btn-radio='item' ng-bind='item.text'><li>
+    </div>
+  </div>
+  <script type='text/javascript' data-main='js/main' src='lib/js/require.js'></script>
+</body>
+</html>
