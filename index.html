@@ -13,9 +13,12 @@
     <h3>Vertical Radio Buttons</h3>
     <div class='row'>
       <div class='col-lg-3 list-group list-group-sm'>
-        <li class='btn btn-default list-group-item list-group-btn' ng-repeat='item in vertical_radio_buttons' ng-model='$parent.selected_button' btn-radio='item' ng-bind='item'></li>
+        <li class='btn btn-default list-group-item list-group-btn' ng-repeat='item in vrb_list' ng-model='$parent.selected_button' btn-radio='item' ng-bind='item'></li>
       </div>
-      <div class='col-lg-6'>
+      <div class='col-lg-3 btn-group-vertical'>
+        <li class='btn btn-default' ng-repeat='item in vrb_group' ng-model='$parent.selected_button' btn-radio='item' ng-bind='item'></li>
+      </div>
+      <div class='col-lg-6 no-padding'>
         <p class='well' ng-bind='"selected button is: \"" + selected_button + "\""'></p>
         <em>* See "Vertical Radio Buttons" note</em>
       </div>
@@ -24,12 +27,28 @@
 
     <h3>Dropdown Selectors</h3>
     <div class='row'>
-      <div class='dropdown well col-lg-3'>
+      <div class='dropdown well col-lg-9'>
         Current item is <span class='dropdown'>
-          <a class='dropdown-toggle' ng-bind='"\"" + selected_dropdown + "\""'></a>
+          <a class='dropdown-toggle' ng-bind='"\"" + selected_dropdown_first + "\""'></a>
           <ul class='dropdown-menu'>
-            <li ng-repeat='item in dropdown_items'>
-              <a ng-click='$parent.selected_dropdown = item' ng-bind='item'></a>
+            <li ng-repeat='item in dropdown_items_first'>
+              <a ng-click='$parent.selected_dropdown_first = item' ng-bind='item'></a>
+            </li>
+          </ul>
+        </span>
+        Over here we have <span class='dropdown'>
+          <a class='dropdown-toggle' ng-bind='"\"" + selected_dropdown_second + "\""'></a>
+          <ul class='dropdown-menu'>
+            <li ng-repeat='item in dropdown_items_second'>
+              <a ng-click='$parent.selected_dropdown_second = item' ng-bind='item'></a>
+            </li>
+          </ul>
+        </span>
+        and <span class='dropdown'>
+          <a class='dropdown-toggle' ng-bind='"\"" + selected_dropdown_third + "\""'></a>
+          <ul class='dropdown-menu'>
+            <li ng-repeat='item in dropdown_items_first'>
+              <a ng-click='$parent.selected_dropdown_third = item' ng-bind='item'></a>
             </li>
           </ul>
         </span>
