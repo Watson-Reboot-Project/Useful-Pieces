@@ -10,7 +10,7 @@
 <div class='container' ng-controller='UsefulPiecesController'>
     <h1 class='text-center'>Useful Pieces</h1>
 
-    <h3>Vertical Radio Buttons</h3>
+    <h3>Vertical Radio Buttons</h3> <!-- {{{ -->
     <div class='row'>
       <div class='col-lg-3 col-md-3 list-group list-group-sm'>
         <li class='btn btn-default list-group-item list-group-btn' ng-repeat='item in vrb_list' ng-model='$parent.selected_button' btn-radio='item' ng-bind='item'></li>
@@ -19,13 +19,13 @@
         <li class='btn btn-default' ng-repeat='item in vrb_group' ng-model='$parent.selected_button' btn-radio='item' ng-bind='item'></li>
       </div>
       <div class='col-lg-6 col-md-6'>
-        <p class='well' ng-bind='"selected button is: \"" + selected_button + "\""'></p>
+        <p class='well' ng-bind='"Selected button is: \"" + selected_button + "\""'></p>
         <em>* See "Vertical Radio Buttons" note</em>
       </div>
     </div>
-    <hr>
+    <hr> <!-- }}} -->
 
-    <h3>Dropdown Selectors</h3>
+    <h3>Dropdown Selectors</h3> <!-- {{{ -->
     <div class='row'>
       <div class='dropdown well col-lg-9 col-md-9'>
         Current item is <span class='dropdown'>
@@ -54,10 +54,10 @@
         </span>
       </div>
     </div>
-    <em>* See "Dropdown Selectors" note</em>
+    <em>* See "Dropdown Selectors" note</em> <!-- }}} -->
 
   </div>
   <script type='text/javascript' data-main='js/main' src='lib/js/require.js'></script>
 </body>
 </html>
-<!-- vim: set tw=0 : -->
+<!-- vim: set tw=0 fdm=marker : -->

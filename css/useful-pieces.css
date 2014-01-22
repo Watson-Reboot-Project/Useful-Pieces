@@ -1,19 +1,19 @@
 /* The css stuffs. yay! */
 
-/* a utility class */
-.no-padding {
-  padding-left: 0;
-}
-
-/* tweaking the relaiton list buttons */
+/* ====================== */
+/* Vertical Radio Buttons */
+/* ====================== */
 .list-group-btn {
     text-align: left;
     border-radius: 0px;
+    border-color: rgb(201, 201, 201);
     padding: 6px 12px;
 }
 
-/* By default, buttons inside button groups inside vertical button groups
- * don't resize to their column. Not sure why? */
+.btn-group-vertical {
+  margin-bottom: 20px;
+}
+
 .btn-group-vertical .btn {
   text-align: left;
 }
@@ -24,11 +24,9 @@
   border-color: #357ebd;
 }
 
-hr {
-  margin-top: 0;
-}
-
-/* making the dropdown-toggles more noticable */
-.dropdown-toggle {
+/* ================== */
+/* Dropdown Selectors */
+/* ================== */
+.dropdown-toggle, .dropdown-menu * {
     cursor: pointer;
 }
